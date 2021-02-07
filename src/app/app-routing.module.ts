@@ -5,11 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'upload',
+    path:'',
     component:HomeComponent
   },
   {
-    path:'',
+    path:'search',
     component:SearchComponent
   }
 ];
