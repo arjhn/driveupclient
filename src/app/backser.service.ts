@@ -6,6 +6,8 @@ import {HttpClient} from '@angular/common/http';
 })
 export class BackserService {
 
+  API_ADR:String="https://rocky-stream-36920.herokuapp.com/"
+
   constructor(
     private _http:HttpClient
   ) { }
@@ -18,14 +20,14 @@ export class BackserService {
     for(let tag of tagList)
       formdata.append('tag',tag)
     console.log(formdata)
-    return this._http.post('http://localhost:8001/image',formdata)
+    return this._http.post(this.API_ADR+'image',formdata)
   }
 
   searchList(val){
-    return this._http.post('http://localhost:8001/search',{'searchVal':val})
+    return this._http.post(this.API_ADR+'search',{'searchVal':val})
   }
 
   getFolderList(){
-    return this._http.get('http://localhost:8001/driveList')
+    return this._http.get(this.API_ADR+' driveList')
   }
 }
