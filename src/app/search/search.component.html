@@ -1,0 +1,8 @@
+<div>
+    <input type="text" (change)='searchFun($event)'>
+    <ul>
+        <li *ngFor="let image1 of imageObj">
+            <img src="https://drive.google.com/uc?id={{image1.gid}}" height="100vh"/>
+        </li>
+    </ul>
+</div>

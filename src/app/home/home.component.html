@@ -1,0 +1,26 @@
+<div class="mainContainer">  
+    
+    <div>
+        <input type="file" name="" id="" (change)="uploadFile($event)" multiple>
+    </div>
+    
+    <div>
+        <img [src]="imgURL"/>
+    </div>
+
+    <div>
+        <ul>
+            <li *ngFor="let tag of tagList;let i=index">
+                <div>{{tag}}</div>
+                <div (click)="crossClick(i)">x</div>
+            </li>
+        </ul>
+        
+        <div id="cedit" (keydown.enter)="liEnter($event)" contenteditable="true"></div>
+    </div>
+
+    <div>
+        <input type="submit" value="submit" (click)="folderList()">
+    </div>
+
+ </div>
