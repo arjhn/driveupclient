@@ -1,3 +1,4 @@
+import { PnotfComponent } from './pnotf/pnotf.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'search',
     component:SearchComponent
+  },
+  {
+    path:'**',
+    component:PnotfComponent
   }
 ];
 
