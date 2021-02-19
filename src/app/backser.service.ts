@@ -6,8 +6,8 @@ import {HttpClient} from '@angular/common/http';
 })
 export class BackserService {
 
-  //API_ADR:String="https://rocky-stream-36920.herokuapp.com/"
-  API_ADR:String="http://localhost:8001/"
+  API_ADR:String="https://rocky-stream-36920.herokuapp.com/"
+  //API_ADR:String="http://localhost:8001/"
 
   constructor(
     private _http:HttpClient,
